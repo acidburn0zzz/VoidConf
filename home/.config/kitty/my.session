@@ -1,0 +1,38 @@
+#---------------=[ Ranger ]=-------------------#
+# Set the window layout for the current tab
+title Ranger
+layout stack
+# Create a window and run the specified command in it
+launch ranger
+# Make the current window the active (focused) window
+focus
+##----------------=[ GoTop ]=------------------#
+## Create a new tab (the part after new_tab is the optional tab name which will be displayed in the tab bar, if omitted, the title of the active window will be used instead)
+#new_tab GoTop
+## Set the working directory for windows in the current tab
+#cd /mnt/D
+## Set the layouts allowed in this tab
+#enabled_layouts tall, stack
+## Set the current layout
+#layout fat
+#launch gotop
+#
+##----------------=[ CMus ]=------------------#
+new_tab Cmus
+launch cmus
+
+#----------------=[ WeeChat ]=------------------#
+new_tab WeeChat
+launch weechat
+
+#----------------=[ WorkSpace ]=------------------#
+new_tab WorkSpace
+launch ranger /mnt/D/WorkSpace
+
+#----------------=[ Film ]=------------------#
+new_tab Film
+launch ranger /mnt/D/Film
+
+#----------------=[ ZSH ]=------------------#
+new_tab Zsh
+launch zsh

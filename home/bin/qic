@@ -1,0 +1,11 @@
+#!/bin/bash
+echo "Creating image..."
+
+name=$(pwd | rev | cut -d/ -f1 | rev)
+capacity=3G
+
+if [[ ! $1 ]]; then
+    qemu-img create $name.img $capacity
+elif [[ $1 ]]; then
+    qemu-img create $1.img $2
+fi

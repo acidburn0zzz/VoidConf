@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+
+upload(){
+    mv $1 ~/MyGist
+    cd ~/MyGist
+    git add .
+    echo "Add a commit message [ENTER]:"
+    read commit
+    git commit -m "$commit"
+    git push
+    url=$(git config --get remote.origin.url)
+    echo "$url#file-$1"
+}
+
+if [ -z "$1" ]; then
+    echo "Please pass the image path"
+else
+    upload $1
+fi

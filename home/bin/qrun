@@ -1,0 +1,10 @@
+#!/bin/bash
+echo "Runnging Installed OS..."
+
+name=$(pwd | rev | cut -d/ -f1 | rev)
+
+if [[ ! $1 ]]; then
+    qemu-system-x86_64 -m 1024 -boot d -enable-kvm -smp 3 -net nic -net user -hda $name.img
+elif [[ $1 ]]; then
+    qemu-system-x86_64 -m 1024 -boot d -enable-kvm -smp 3 -net nic -net user -hda $1.img
+fi

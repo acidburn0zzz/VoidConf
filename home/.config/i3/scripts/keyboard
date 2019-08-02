@@ -1,0 +1,15 @@
+#!/bin/bash
+#var=$(xkblayout-state print "%n")
+#echo $var
+function bar {
+#  layout=$1
+#  width=${BAR_WIDTH:-10}
+#  echo -en "<span font='${LABEL_SIZE:12}' color='$ICON_COLOR'>$LABEL</span> "
+#  echo -n "<span rise='3000' color='$TEXT_COLOR'>"
+  echo -en "$layout"
+#  echo "</span>"
+}
+
+layout=$(xkblayout-state print %s)
+bar $layout
+

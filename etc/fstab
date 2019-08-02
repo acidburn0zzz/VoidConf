@@ -1,0 +1,4 @@
+UUID=18513ef8-1386-4ed2-8e8a-65a8d8cbe023 / ext4 defaults 0 1
+tmpfs /tmp tmpfs defaults,nosuid,nodev 0 0
+/dev/sda5	/mnt/D	ntfs-3g uid=linarcx,gid-users	0 0
+/dev/sda6	/mnt/E	ntfs-3g	uid=linarcx,gid-users	0 0

@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+function bar {
+    temperature=$1
+    echo -en "$temperature"
+}
+
+temperature=$(cat /sys/class/thermal/thermal_zone*/temp | rev | cut -c 4- | rev)
+
+bar $temperature

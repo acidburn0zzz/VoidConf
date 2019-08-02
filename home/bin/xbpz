@@ -1,0 +1,4 @@
+#!/bin/bash
+wget -P ~/.xbpz $1
+echo "hi"
+
