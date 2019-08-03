@@ -29,6 +29,8 @@ alias girc='git rebase --continue'
 alias gich='f(){ git checkout "$1"}; f'
 alias gichb='f(){ git checkout -b "$1"}; f'
 
+alias gar='f(){ git remote set-url --add origin "$1"}; f'
+alias grr='f(){ git remote set-url origin "$1" }; f'
 alias gir="git remote -v"
 alias gitt="git tag"
 alias gib="git branch -v"
