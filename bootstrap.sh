@@ -137,6 +137,20 @@ FixFontRenderingIssue(){
     PrintFancyLines
 }
 
+DownloadAndInstallCustomXBPS(){
+    cd ~ && mkdir linarcxbps && cd linarcxbps
+    curl -O https://git.sr.ht/~linarcx/linarcxbps/blob/master/packages/font-vazir-20.1.0_1.noarch.xbps
+    curl -O https://git.sr.ht/~linarcx/linarcxbps/blob/master/packages/capitaine-cursors-r3_1.noarch.xbps
+    curl -O https://git.sr.ht/~linarcx/linarcxbps/blob/master/packages/jcal-0.4.1_1.x86_64.xbps
+    curl -O https://git.sr.ht/~linarcx/linarcxbps/blob/master/packages/la-capitaine-icon-theme-0.6.1_1.noarch.xbps
+    curl -O https://git.sr.ht/~linarcx/linarcxbps/blob/master/packages/mcos-mjv-xfce-edition-0_1.noarch.xbps
+    sudo xdowngrade font-vazir-20.1.0_1.noarch.xbps
+    sudo xdowngrade capitaine-cursors-r3_1.noarch.xbps
+    sudo xdowngrade jcal-0.4.1_1.x86_64.xbps
+    sudo xdowngrade la-capitaine-icon-theme-0.6.1_1.noarch.xbps
+    sudo xdowngrade mcos-mjv-xfce-edition-0_1.noarch.xbps
+}
+
 InstallSoftware "git"
 InstallSoftware "ranger ntfs-3g"
 InstallSoftware "zathura zathura-djvu zathura-pdf-mupdf"
@@ -145,24 +159,26 @@ InstallSoftware "xz tar unzip p7zip"
 InstallSoftware "feh fzf jcal htop gist ImageMagick the_silver_searcher"
 InstallSoftware "gnome-screenshot android-file-transfer-linux"
 InstallSoftware "tor torsocks obfs4proxy polipo privoxy wifish net-tools dnsmasq dnscrypt-proxy"
-InstallSoftware "liberation-fonts-ttf nerd-fonts font-awesome5 font-iosevka ttf-ubuntu-font-family"
+InstallSoftware "liberation-fonts-ttf nerd-fonts font-awesome5 font-iosevka ttf-ubuntu-font-family font-vazir"
 InstallSoftware "nodejs yarn neovim python-neovim python3-neovim"
 InstallSoftware "x264 alsa-utils libva-intel-driver libva-vdpau-driver libvdpau-va-gl xf86-video-intel xf86-video-nouveau"
 InstallSoftware "firefox qemu godot uget libreoffice telegram-desktop transmission-gtk"
-InstallSoftware "i3 i3lock i3blocks w3m acpi atool wmctrl sysstat numlockx playerctl setxkbmap mediainfo parcellite"
+InstallSoftware "i3 i3lock i3blocks w3m w3m-img acpi atool wmctrl sysstat numlockx playerctl setxkbmap mediainfo parcellite"
 InstallSoftware "xorg-minimal xorg-fonts xclip xprop xkbevd xdotool xkbutils xkblayout-state xbacklight"
 InstallSoftware "xtools"
+#DownloadAndInstallCustomXBPS
 
 EnableServices tor
 EnableServices privoxy
 EnableServices polipo
 
-InstallCustomScripts
-CheckRepo
-
-CreateTelegramDir
 FixFontRenderingIssue
 CopyLocalFonts
+
+InstallCustomScripts
+CheckRepo
+CreateTelegramDir
+
 
 cd ~/VoidConf
 
@@ -176,7 +192,8 @@ cd home/.config/ranger
 chmod +x scope.sh
 cd ~/VoidConf
 
-# InstallSoftware capitaine-cursors mcos-mjv-xfce-edition la-capitaine-icon-theme
-# InstallSoftware font-vazir fsearch-git v2ray netctl rar
+# InstallSoftware capitaine-cursors mcos-mjv-xfce-edition la-capitaine-icon-theme fsearch-git
+# InstallSoftware v2ray netctl rar
 #	find ~/$1 -type d -maxdepth 1 -exec ln -s $PWD/$1 {} \;
 #source ~/.zshrc
+#sudo xbps-rindex --add font-vazir-20.1.0_1.noarch.xbps
