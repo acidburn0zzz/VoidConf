@@ -53,7 +53,7 @@ CheckRepo(){
 
 CloneRepo(){
     printf "${Blue}>> Cloning repo${NC}\n"
-    git clone https://git.sr.ht/~linarcx/VoidConf
+    git clone https://notabug.org/linarcx/VoidConf
     PrintFancyLines
 }
 
@@ -112,7 +112,7 @@ DoMagic(){
     Symlinkfiles .ssh/config
     SymlinkDirs .config
 
-    printf "${Blue}>> To download nvim plugins, open it and run: `:PlugInstall`${NC}\n"
+    printf "${Blue}>> To download nvim plugins, open it and run: :PlugInstall${NC}\n"
 
     SymlinkDirs .weechat
 }
