@@ -167,10 +167,10 @@ CopyLocalFonts
 cd ~/VoidConf
 
 git remote set-url origin git@pixie.town:linarcx1/VoidConf.git
-git remote set-url --add origin git@github.com:LinArcX/VoidConf.git
 git remote set-url --add origin git@git.sr.ht:~linarcx/VoidConf
 git remote set-url --add origin git@notabug.org:linarcx/VoidConf.git
 git remote set-url --add origin git@gitlab.com:LinArcX/voidconf.git
+git remote set-url --add origin git@github.com:LinArcX/VoidConf.git
 
 cd home/.config/ranger
 chmod +x scope.sh
