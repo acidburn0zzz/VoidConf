@@ -1,8 +1,8 @@
 [user]
-	name = LinArcX
-	email = linarcx@gmail.com
+	name = linarcx
+	email = linarcx@riseup.net
 [core]
 	editor = nvim
 
 [http "https://gitlab.com"]
- proxy = http://localhost:8118
+	proxy = http://localhost:8118

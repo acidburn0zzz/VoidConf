@@ -26,5 +26,4 @@ install wifish package and connect to wifi network through it.
 
 
 ### Remove dhcpcd service
-1. Open `/etc/rc.local` file and comment all lines of it.                                                                                                34.34 ⏱  ✔  12:40:07 
-2. Remove it's service: `sudo rm /var/service/dhcpcd`
+1. Open `/etc/rc.local` file and comment all lines of it.                                                                                              2. Remove it's service: `sudo rm /var/service/dhcpcd`
