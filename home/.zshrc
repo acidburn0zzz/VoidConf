@@ -15,6 +15,7 @@ alias pc='python -ic "from __future__ import division; from math import *"'
 
 # Git
 alias gii="git init"
+alias gcl='f(){ git clone "$1" }; f'
 alias gis="git status"
 alias gia="git add ."
 alias gic='f(){ git commit -m "$1" }; f'
