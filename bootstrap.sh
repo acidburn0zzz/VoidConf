@@ -53,7 +53,7 @@ CheckRepo(){
 
 CloneRepo(){
     printf "${Blue}>> Cloning repo${NC}\n"
-    git clone https://notabug.org/linarcx/VoidConf
+    git clone git@notabug.org:linarcx/VoidConf.git
     PrintFancyLines
 }
 
