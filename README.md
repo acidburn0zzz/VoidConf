@@ -1,3 +1,6 @@
+### Install boostrap.sh
+curl -O https://gitlab.com/LinArcX/voidconf/raw/master/bootstrap.sh && chmod +x bootstrap.sh && ./bootstrap.sh
+
 ### Install oh-my-zsh
 `sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"\n`
 

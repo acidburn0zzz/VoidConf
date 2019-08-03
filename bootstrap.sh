@@ -109,7 +109,7 @@ DoMagic(){
     Symlinkfiles .gtkrc-2.0
 
     SymlinkDirs bin
-    Symlinkfiles .ssh
+    Symlinkfiles .ssh/config
     SymlinkDirs .config
 
     printf "${Blue}>> To download nvim plugins, open it and run: `:PlugInstall`${NC}\n"
@@ -164,8 +164,7 @@ CreateTelegramDir
 FixFontRenderingIssue
 CopyLocalFonts
 
-#source ~/.zshrc
-
 # InstallSoftware capitaine-cursors mcos-mjv-xfce-edition la-capitaine-icon-theme
 # InstallSoftware font-vazir fsearch-git v2ray netctl rar
 #	find ~/$1 -type d -maxdepth 1 -exec ln -s $PWD/$1 {} \;
+#source ~/.zshrc
