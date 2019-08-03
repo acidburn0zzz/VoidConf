@@ -164,9 +164,9 @@ CreateTelegramDir
 FixFontRenderingIssue
 CopyLocalFonts
 
-chmod +x .config/ranger/plugins/scope.sh
-
 cd ~/VoidConf
+chmod +x home/.config/ranger/plugins/scope.sh
+
 git remote set-url origin git@pixie.town:linarcx1/VoidConf.git
 git remote set-url --add origin git@github.com:LinArcX/VoidConf.git
 git remote set-url --add origin git@git.sr.ht:~linarcx/VoidConf
