@@ -165,13 +165,16 @@ FixFontRenderingIssue
 CopyLocalFonts
 
 cd ~/VoidConf
-chmod +x home/.config/ranger/plugins/scope.sh
 
 git remote set-url origin git@pixie.town:linarcx1/VoidConf.git
 git remote set-url --add origin git@github.com:LinArcX/VoidConf.git
 git remote set-url --add origin git@git.sr.ht:~linarcx/VoidConf
 git remote set-url --add origin git@notabug.org:linarcx/VoidConf.git
 git remote set-url --add origin git@gitlab.com:LinArcX/voidconf.git
+
+cd home/.config/ranger
+chmod +x scope.sh
+cd ~/VoidConf
 
 # InstallSoftware capitaine-cursors mcos-mjv-xfce-edition la-capitaine-icon-theme
 # InstallSoftware font-vazir fsearch-git v2ray netctl rar
