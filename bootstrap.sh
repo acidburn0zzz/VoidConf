@@ -166,6 +166,13 @@ CopyLocalFonts
 
 chmod +x .config/ranger/plugins/scope.sh
 
+cd ~/VoidConf
+git remote set-url origin git@pixie.town:linarcx1/VoidConf.git
+git remote set-url --add origin git@github.com:LinArcX/VoidConf.git
+git remote set-url --add origin git@git.sr.ht:~linarcx/VoidConf
+git remote set-url --add origin git@notabug.org:linarcx/VoidConf.git
+git remote set-url --add origin git@gitlab.com:LinArcX/voidconf.git
+
 # InstallSoftware capitaine-cursors mcos-mjv-xfce-edition la-capitaine-icon-theme
 # InstallSoftware font-vazir fsearch-git v2ray netctl rar
 #	find ~/$1 -type d -maxdepth 1 -exec ln -s $PWD/$1 {} \;
