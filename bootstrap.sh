@@ -164,6 +164,8 @@ CreateTelegramDir
 FixFontRenderingIssue
 CopyLocalFonts
 
+chmod +x .config/ranger/plugins/scope.sh
+
 # InstallSoftware capitaine-cursors mcos-mjv-xfce-edition la-capitaine-icon-theme
 # InstallSoftware font-vazir fsearch-git v2ray netctl rar
 #	find ~/$1 -type d -maxdepth 1 -exec ln -s $PWD/$1 {} \;
