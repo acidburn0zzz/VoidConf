@@ -47,5 +47,13 @@ Push it on ipfs:
 Install some package from it:
 `sudo xbps-install --repository=https://git.sr.ht/\~linarcx/linarcxbps/tree/master/packages jcal`
 
+### Fix date & time issue
+If you dualboot void with windows you may encounter with some problems, like conflict date and time. Windows by default using localtime and most linux distros like void use UTC format.
+So, for fixing the issue first go to windows and change it's time standard to UTC:
+https://wiki.archlinux.org/index.php/System_time#UTC_in_Windows
+
+And then go to void-linux and install `openntpd` package, then enable it's service:
+`ln -s /etc/sv/openntpd /var/service/`
+
 ### References
 1. [Signing_a_repo](https://wiki.voidlinux.org/XBPS#Signing_a_repository)
