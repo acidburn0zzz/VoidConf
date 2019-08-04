@@ -2,6 +2,7 @@
 /home/.weechat/weechat.log
 /home/.weechat/script/plugins.xml.gz
 
+/home/.config/Qt/
 /home/.config/coc/
 /home/.config/uGet/
 /home/.config/pulse/

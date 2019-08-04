@@ -15,6 +15,7 @@ alias pc='python -ic "from __future__ import division; from math import *"'
 
 # Git
 alias gii="git init"
+alias gil="git log"
 alias gcl='f(){ git clone "$1" }; f'
 alias gis="git status"
 alias giaa="git add ."
@@ -58,7 +59,9 @@ alias xqm="xbps-query -m"                               # List of all manual ins
 alias xqf="xbps-query -f"                               # List all files of related package
 alias xqL="xbps-query -L"                               # List of all repos
 alias xqO="xbps-query -O"                               # List of all orphaned packages
-alias xqX="xbps-query -X"                               # Show the reverse dependencies for PKG
+alias xrdp="xbps-query -X"                               # Show the reverse dependencies for PKG
+alias xrvd="xbps-query -RX"                              # Show the reverse dependencies for PKG
+alias xrd="xbps-query -Rx"                              # Showing the required dependencies for a package
 alias xqH="xbps-query -H"                               # List registered packages in the package database (pkgdb) that are on hold
 alias xqn="xbps-query -Rs '' | wc -l"                   # Show the number of whole packages in your repos
 
