@@ -69,13 +69,6 @@ Symlinkfiles(){
     PrintFancyLines
 }
 
-CopyLocalFonts(){
-    printf "${Blue}>> Copying local.conf to /etc/fonts${NC}\n"
-    cd ../etc/fonts
-    sudo cp local.conf /etc/fonts/local.conf
-    PrintFancyLines
-}
-
 SymlinkDirs(){
     printf "${Blue}>> Copying $1 to home directory${NC}\n"
     if [ -d ~/$1 ];then
@@ -85,6 +78,13 @@ SymlinkDirs(){
     else
     	ln -s $PWD/$1 ~/$1
     fi
+    PrintFancyLines
+}
+
+CopyLocalFonts(){
+    printf "${Blue}>> Copying local.conf to /etc/fonts${NC}\n"
+    cd ../etc/fonts
+    sudo cp local.conf /etc/fonts/local.conf
     PrintFancyLines
 }
 
@@ -106,7 +106,7 @@ DoMagic(){
     Symlinkfiles .zshenv
     Symlinkfiles .zprofile
     Symlinkfiles .gitconfig
-    Symlinkfiles .gtkrc-2.0
+    Symlinkfiles ".gtkrc-2.0"
 
     SymlinkDirs bin
     Symlinkfiles .ssh/config
