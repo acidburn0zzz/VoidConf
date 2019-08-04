@@ -1,24 +1,14 @@
-home/.config/ranger/plugins/__pycache__/*
-#/home/.config/ranger/plugins/__pycache__/*.*
-#/home/.config/ranger/plugins/__pycache__/**.*
-
-#home/.config/ranger/plugins/__pycache__/__init__.cpython-36.opt-1.pyc
-#home/.config/ranger/plugins/__pycache__/devicons.cpython-36.opt-1.pyc
-#home/.config/ranger/plugins/__pycache__/devicons_linemode.cpython-36.opt-1.pyc
-#home/.weechat/weechat.log
-
-#/home/.config/ranger/plugins/__pycache__/__init__.cpython-36.opt-1.pyc
-#/home/.config/ranger/plugins/__pycache__/devicons.cpython-36.opt-1.pyc
-#/home/.config/ranger/plugins/__pycache__/devicons_linemode.cpython-36.opt-1.pyc
-
-#home/.weechat/weechat.log
-/home/.weechat/weechat.log
 /home/.weechat/logs/*
-
-
-/home/.config/pulse/
+/home/.weechat/weechat.log
+/home/.weechat/script/plugins.xml.gz
 
 /home/.config/coc/
+/home/.config/uGet/
+/home/.config/pulse/
+/home/.config/godot/
+/home/.config/libreoffice/
+/home/.config/transmission/
+
 /home/.config/nvim/plugged/
 /home/.config/nvim/undodir/
 
@@ -27,3 +17,13 @@ home/.config/ranger/plugins/__pycache__/*
 /home/.config/cmus/playlists/
 /home/.config/cmus/search-history
 /home/.config/cmus/command-history
+
+#/home/.config/ranger/plugins/__pycache__/*
+#/home/.config/ranger/plugins/__pycache__/*.*
+#/home/.config/ranger/plugins/__pycache__/**.*
+#home/.config/ranger/plugins/__pycache__/__init__.cpython-36.opt-1.pyc
+#home/.config/ranger/plugins/__pycache__/devicons.cpython-36.opt-1.pyc
+#/home/.config/ranger/plugins/__pycache__/__init__.cpython-36.opt-1.pyc
+#/home/.config/ranger/plugins/__pycache__/devicons.cpython-36.opt-1.pyc
+#home/.config/ranger/plugins/__pycache__/devicons_linemode.cpython-36.opt-1.pyc
+#/home/.config/ranger/plugins/__pycache__/devicons_linemode.cpython-36.opt-1.pyc
