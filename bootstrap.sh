@@ -151,6 +151,29 @@ DownloadAndInstallCustomXBPS(){
     sudo xdowngrade mcos-mjv-xfce-edition-0_1.noarch.xbps
 }
 
+configGnomeScreenShot(){
+    cd ~
+    mkdir Pictures
+    gsettings set org.gnome.gnome-screenshot auto-save-directory "~/Pictures"
+    cd ~/VoidConf/
+}
+
+configRanger(){
+    cd ~/VoidConf/home/.config/ranger
+    chmod +x scope.sh
+    cd ~/VoidConf
+}
+
+setGitRemotes(){
+    cd ~/VoidConf
+    git remote set-url origin git@pixie.town:linarcx1/VoidConf.git
+    git remote set-url --add origin git@git.sr.ht:~linarcx/VoidConf
+    git remote set-url --add origin git@notabug.org:linarcx/VoidConf.git
+    git remote set-url --add origin git@gitlab.com:LinArcX/voidconf.git
+    git remote set-url --add origin git@github.com:LinArcX/VoidConf.git
+    cd ~/VoidConf
+}
+
 InstallSoftware "git"
 InstallSoftware "ranger ntfs-3g"
 InstallSoftware "zathura zathura-djvu zathura-pdf-mupdf"
@@ -166,7 +189,6 @@ InstallSoftware "firefox qemu godot uget libreoffice telegram-desktop transmissi
 InstallSoftware "i3 i3lock i3blocks w3m w3m-img acpi atool wmctrl sysstat numlockx playerctl setxkbmap mediainfo parcellite"
 InstallSoftware "xorg-minimal xorg-fonts xclip xprop xkbevd xdotool xkbutils xkblayout-state xbacklight"
 InstallSoftware "xtools"
-#DownloadAndInstallCustomXBPS
 
 EnableServices tor
 EnableServices privoxy
@@ -179,21 +201,14 @@ InstallCustomScripts
 CheckRepo
 CreateTelegramDir
 
-
-cd ~/VoidConf
-
-git remote set-url origin git@pixie.town:linarcx1/VoidConf.git
-git remote set-url --add origin git@git.sr.ht:~linarcx/VoidConf
-git remote set-url --add origin git@notabug.org:linarcx/VoidConf.git
-git remote set-url --add origin git@gitlab.com:LinArcX/voidconf.git
-git remote set-url --add origin git@github.com:LinArcX/VoidConf.git
-
-cd home/.config/ranger
-chmod +x scope.sh
-cd ~/VoidConf
+setGitRemotes
+configRanger
+configGnomeScreenShot
 
 # InstallSoftware capitaine-cursors mcos-mjv-xfce-edition la-capitaine-icon-theme fsearch-git
 # InstallSoftware v2ray netctl rar
 #	find ~/$1 -type d -maxdepth 1 -exec ln -s $PWD/$1 {} \;
 #source ~/.zshrc
 #sudo xbps-rindex --add font-vazir-20.1.0_1.noarch.xbps
+#sudo chattr +a VoidConf
+#DownloadAndInstallCustomXBPS

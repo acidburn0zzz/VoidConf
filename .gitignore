@@ -13,11 +13,19 @@
 /home/.config/nvim/plugged/
 /home/.config/nvim/undodir/
 
+/home/.config/Dharkael/
+/home/.config/QtProject.conf
+/home/.config/glib-2.0/
+/home/.config/mpv/watch_later/
+
 /home/.config/cmus/cache
 /home/.config/cmus/lib.pl
 /home/.config/cmus/playlists/
 /home/.config/cmus/search-history
 /home/.config/cmus/command-history
+
+/home/.config/QtProject/
+/home/.config/Trolltech.conf
 
 #/home/.config/ranger/plugins/__pycache__/*
 #/home/.config/ranger/plugins/__pycache__/*.*
