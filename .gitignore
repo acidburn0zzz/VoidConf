@@ -11,6 +11,7 @@
 /home/.config/transmission/
 
 /home/.config/configstore/
+/home/.config/vimb/
 
 /home/.config/nvim/plugged/
 /home/.config/nvim/undodir/

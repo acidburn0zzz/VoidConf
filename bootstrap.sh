@@ -164,6 +164,13 @@ configRanger(){
     cd ~/VoidConf
 }
 
+
+configi3(){
+    cd ~/VoidConf/home/.config/i3/scripts
+    chmod +x keyboard
+    cd ~/VoidConf
+}
+
 setGitRemotes(){
     cd ~/VoidConf
     git remote set-url origin git@pixie.town:linarcx1/VoidConf.git
@@ -203,6 +210,7 @@ CreateTelegramDir
 
 setGitRemotes
 configRanger
+configi3
 configGnomeScreenShot
 
 # InstallSoftware capitaine-cursors mcos-mjv-xfce-edition la-capitaine-icon-theme fsearch-git dnsmasq dnscrypt-proxy gist
