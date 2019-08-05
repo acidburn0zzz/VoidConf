@@ -10,6 +10,8 @@
 /home/.config/libreoffice/
 /home/.config/transmission/
 
+/home/.config/configstore/
+
 /home/.config/nvim/plugged/
 /home/.config/nvim/undodir/
 

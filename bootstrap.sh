@@ -179,11 +179,11 @@ InstallSoftware "ranger ntfs-3g"
 InstallSoftware "zathura zathura-djvu zathura-pdf-mupdf"
 InstallSoftware "zsh mpv cmus rofi kitty weechat youtube-dl"
 InstallSoftware "xz tar unzip p7zip"
-InstallSoftware "feh fzf jcal htop gist ImageMagick the_silver_searcher"
+InstallSoftware "feh fzf jcal htop ImageMagick the_silver_searcher"
 InstallSoftware "gnome-screenshot android-file-transfer-linux"
-InstallSoftware "tor torsocks obfs4proxy polipo privoxy wifish net-tools dnsmasq dnscrypt-proxy"
+InstallSoftware "tor torsocks obfs4proxy polipo privoxy wifish net-tools "
 InstallSoftware "liberation-fonts-ttf nerd-fonts font-awesome5 font-iosevka ttf-ubuntu-font-family font-vazir"
-InstallSoftware "nodejs yarn neovim python-neovim python3-neovim"
+InstallSoftware "nodejs yarn neovim python3-neovim"
 InstallSoftware "x264 alsa-utils libva-intel-driver libva-vdpau-driver libvdpau-va-gl xf86-video-intel xf86-video-nouveau"
 InstallSoftware "firefox qemu godot uget libreoffice telegram-desktop transmission-gtk"
 InstallSoftware "i3 i3lock i3blocks w3m w3m-img acpi atool wmctrl sysstat numlockx playerctl setxkbmap mediainfo parcellite"
@@ -205,7 +205,7 @@ setGitRemotes
 configRanger
 configGnomeScreenShot
 
-# InstallSoftware capitaine-cursors mcos-mjv-xfce-edition la-capitaine-icon-theme fsearch-git
+# InstallSoftware capitaine-cursors mcos-mjv-xfce-edition la-capitaine-icon-theme fsearch-git dnsmasq dnscrypt-proxy gist
 # InstallSoftware v2ray netctl rar
 #	find ~/$1 -type d -maxdepth 1 -exec ln -s $PWD/$1 {} \;
 #source ~/.zshrc
