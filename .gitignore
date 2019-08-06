@@ -10,6 +10,16 @@
 /home/.config/libreoffice/
 /home/.config/transmission/
 
+/home/.config/Thunar/
+/home/.config/libfm/
+/home/.config/pcmanfm/
+/home/.config/ranger/plugins/__pycache__/plugin_pmount_dynamic.cpython-36.opt-1.pyc
+/home/.config/ranger/plugins/plugin_pmount_dynamic.py
+/home/.config/spacefm/
+/home/.config/xfce4/
+/home/.config/xfe/
+
+
 /home/.config/configstore/
 /home/.config/vimb/
 /home/.config/kindd/

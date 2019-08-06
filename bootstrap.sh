@@ -182,7 +182,7 @@ setGitRemotes(){
 }
 
 InstallSoftware "git"
-InstallSoftware "ranger ntfs-3g"
+InstallSoftware "ranger ntfs-3g bashmount"
 InstallSoftware "zathura zathura-djvu zathura-pdf-mupdf"
 InstallSoftware "zsh mpv cmus rofi kitty weechat youtube-dl"
 InstallSoftware "xz tar unzip p7zip"
