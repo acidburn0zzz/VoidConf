@@ -12,6 +12,7 @@
 
 /home/.config/configstore/
 /home/.config/vimb/
+/home/.config/kindd/
 
 /home/.config/nvim/plugged/
 /home/.config/nvim/undodir/

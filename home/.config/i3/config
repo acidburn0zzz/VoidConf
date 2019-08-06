@@ -46,6 +46,9 @@ bindsym $mod+F3 exec rofi -show ssh -font "iosevka 12" -theme gruvbox-dark-soft 
 bindsym $mod+F4 exec rofi -show keys -font "iosevka 12" -theme gruvbox-dark-soft -show-icons
 bindsym $mod+F5 exec rofi -show window -font "iosevka 12" -theme gruvbox-dark-soft -show-icons
 
+bindsym $mod+d exec dmenu_run -l 5 -fn iosevka -i -p "Go:"
+
+
 # When press the powerbutton, system will suspend
 bindsym --release XF86PowerOff exec i3lock -c 37313f && systemctl suspend
 
