@@ -111,6 +111,7 @@ DoMagic(){
     SymlinkDirs bin
     Symlinkfiles .ssh/config
     SymlinkDirs .config
+    SymlinkDirs .icons
 
     printf "${Blue}>> To download nvim plugins, open it and run: :PlugInstall${NC}\n"
 
