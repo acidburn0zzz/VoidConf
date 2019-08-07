@@ -6,6 +6,7 @@ HISTFILESIZE=2000
 alias vi='nvim'
 alias vim='nvim'
 alias ll='ls -ltrah'
+alias bashmount='sudo bashmount'
 alias ls='ls --color=auto'
 alias duch='f(){ du -ch "$1" }; f'
 alias ranger='ranger --cmd=tab_close'

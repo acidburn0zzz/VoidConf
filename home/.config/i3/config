@@ -31,7 +31,8 @@ floating_modifier $mod
 workspace_layout tabbed
 
 #### Bindings ####
-exec /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
+exec --no-startup-id /usr/libexec/polkit-gnome-authentication-agent-1 &
+#exec /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 
 # start a terminal
 bindsym $mod+Return exec kitty #i3-sensible-terminal
