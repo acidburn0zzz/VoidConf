@@ -3,7 +3,7 @@ echo "Runnging image..."
 
 name=$(pwd | rev | cut -d/ -f1 | rev)
 path=./*.iso
-capacity=6G
+capacity=3G
 
 if [[ ! $1 ]]; then
     qemu-system-x86_64 -hda $name.img -boot d -cdrom $path -m $capacity &

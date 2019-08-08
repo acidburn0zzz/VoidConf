@@ -2,7 +2,7 @@
 echo "Creating image..."
 
 name=$(pwd | rev | cut -d/ -f1 | rev)
-capacity=3G
+capacity=20G
 
 if [[ ! $1 ]]; then
     qemu-img create $name.img $capacity
