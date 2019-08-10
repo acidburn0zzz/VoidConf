@@ -55,5 +55,18 @@ https://wiki.archlinux.org/index.php/System_time#UTC_in_Windows
 And then go to void-linux and install `openntpd` package, then enable it's service:
 `ln -s /etc/sv/openntpd /var/service/`
 
+### Fix Grub
+You should boot with a void live cd and chroot and then start fixing grub:
+- `mkdir -p /mnt/void`
+- `mount /dev/sdX1 /mnt/void`
+- `bash`
+- `mount --types proc /proc /mnt/void/proc`
+- `mount --rbind /sys /mnt/void/sys`
+- `mount --rbind /dev /mnt/void/dev`
+- `chroot /mnt/void /usr/bin/bash`
+- `grub-mkconfig -o /boot/grub/grub.cfg`
+- `grub-install /dev/sda`
+
 ### References
 1. [Signing_a_repo](https://wiki.voidlinux.org/XBPS#Signing_a_repository)
+2. [Installation via chroot](https://wiki.voidlinux.org/Installation_via_chroot)

@@ -2,7 +2,7 @@
 echo "Runnging Installed OS..."
 
 name=$(pwd | rev | cut -d/ -f1 | rev)
-capacity=6G
+capacity=3G
 cores=6
 
 if [[ ! $1 ]]; then
