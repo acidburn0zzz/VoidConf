@@ -19,6 +19,8 @@
 /home/.config/xfce4/
 /home/.config/xfe/
 /home/.config/git/
+/home/.config/nvim/.netrwhist
+/home/bin/stack
 
 
 /home/.config/configstore/
