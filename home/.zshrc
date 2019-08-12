@@ -15,6 +15,10 @@ alias ranger='ranger --cmd=tab_close'
 alias mh='sudo mount -t ntfs /dev/sdb /mnt/Hard'
 alias tel="Telegram -many -workdir ~/.tg2 &"
 alias pc='python -ic "from __future__ import division; from math import *"'
+alias yd='f(){ torify youtube-dl -f "best[height=720]"+bestaudio --write-auto-sub "$1" }; f'
+alias mld="simple-mtpfs -l"
+alias mad="simple-mtpfs --device 1 ~/Device"
+alias mud="fusermount -u ~/Device"
 
 # Git
 alias gii="git init"
