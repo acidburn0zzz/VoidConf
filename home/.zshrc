@@ -5,6 +5,7 @@ HISTFILESIZE=2000
 # General
 alias vi='nvim'
 alias vim='nvim'
+alias cat='bat'
 alias ll='ls -ltrah'
 alias bashmount='sudo bashmount'
 alias top='htop'
