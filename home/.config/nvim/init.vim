@@ -16,8 +16,6 @@ Plug 'ryanoasis/vim-devicons'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 
-"Plug 'fannheyward/coc-texlab', {'do': 'yarn install --frozen-lockfile'}
-
 " Sessions
 Plug 'xolox/vim-session'
 Plug 'xolox/vim-misc'
@@ -59,5 +57,10 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'Shougo/vimproc.vim', {'do' : 'make'}
 Plug 'idanarye/vim-vebugger'
 
+" Latex
+Plug 'xuhdev/vim-latex-live-preview', { 'for': 'tex' }
+
 call plug#end()
 colorscheme molokai
+
+"Plug 'fannheyward/coc-texlab', {'do': 'yarn install --frozen-lockfile'}

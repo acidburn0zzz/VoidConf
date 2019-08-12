@@ -58,6 +58,7 @@ alias xrx="sudo xbps-remove -Oo"                        # Remove all orphaned pa
 alias xq="xbps-query -Rs"                               # Search for a package
 alias xql="xbps-query -l"                               # List of all packages
 alias xqm="xbps-query -m"                               # List of all manual installed packages
+alias xqms="tmp=$(mktemp); xbps-query -m > ${tmp}; xilog | grep -f ${tmp}; rm ${tmp};"
 alias xqf="xbps-query -f"                               # List all files of related package
 alias xqL="xbps-query -L"                               # List of all repos
 alias xqO="xbps-query -O"                               # List of all orphaned packages
