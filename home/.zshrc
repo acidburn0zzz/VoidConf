@@ -114,7 +114,6 @@ export FCEDIT="$EDITOR"
 export VISUAL="$EDITOR"
 export SUDO_EDITOR="$EDITOR"
 
-export MANPATH=$MANPATH:$HOME/man
 export PATH=$PATH:$HOME/bin
 export PATH=$PATH:$HOME/.local/bin
 export PATH=$PATH:$HOME/.cargo/bin
@@ -125,6 +124,8 @@ export PATH=$PATH:$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin
 export PATH=$PATH:$HOME/.tex/local/texlive/2019/bin/x86_64-linux
 export MANPATH=$MANPATH:$HOME/.tex/local/texlive/2019/texmf-dist/doc/man
 export INFOPATH=$INFOPATH:$HOME/.tex/local/texlive/2019/texmf-dist/doc/info
+
+export MANPATH=$MANPATH:$HOME/man
 
 export ANDROID_NDK=/opt/android-ndk
 export ANDROID_NDK_HOME=/opt/android-ndk
