@@ -214,7 +214,7 @@ configRanger
 configi3
 configGnomeScreenShot
 
-# InstallSoftware pkg-config gdb gcc elogind clang
+# InstallSoftware pkg-config gdb gcc elogind clang man-pages-devel man-pages-posix
 # InstallSoftware capitaine-cursors mcos-mjv-xfce-edition la-capitaine-icon-theme fsearch-git
 # InstallSoftware v2ray netctl rar
 
