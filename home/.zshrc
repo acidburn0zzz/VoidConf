@@ -114,6 +114,7 @@ export FCEDIT="$EDITOR"
 export VISUAL="$EDITOR"
 export SUDO_EDITOR="$EDITOR"
 
+export MANPATH=$MANPATH:$HOME/man
 export PATH=$PATH:$HOME/bin
 export PATH=$PATH:$HOME/.local/bin
 export PATH=$PATH:$HOME/.cargo/bin

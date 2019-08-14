@@ -109,6 +109,7 @@ DoMagic(){
 	Symlinkfiles ".gtkrc-2.0"
 
 	SymlinkDirs bin
+	SymlinkDirs man
 	Symlinkfiles .ssh/config
 	SymlinkDirs .config
 	SymlinkDirs .icons

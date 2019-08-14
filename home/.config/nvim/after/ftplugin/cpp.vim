@@ -4,7 +4,9 @@ autocmd BufWrite * :call AutoFormat()
 autocmd FileType cpp setlocal equalprg=clang-format " Format Entire Page
 
 " F5-F10 are free.
-map <F5> :w<CR> :!clear; make<CR> " Build the project
+":set ft=c
+nnoremap <F5> :FSHere<CR>
+"map <F5> :w<CR> :!clear; make<CR> " Build the project
 map <F6> :w<CR> :!clear; make<CR> :term ./%<<CR> " Build and run the project
 nnoremap <silent> <F7> :VBGstepIn<CR>
 nnoremap <silent> <F8> :VBGstepOut<CR>
