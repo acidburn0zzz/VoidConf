@@ -24,8 +24,7 @@ Plug 'dart-lang/dart-vim-plugin', { 'for': 'dart' }
 Plug 'derekwyatt/vim-fswitch'
 
 " Debugger
-Plug 'Shougo/vimproc.vim', {'do' : 'make'}
-Plug 'idanarye/vim-vebugger'
+Plug 'huawenyu/neogdb.vim'
 
 " Snippets
 Plug 'SirVer/ultisnips' " Track the engine.
@@ -66,3 +65,6 @@ colorscheme molokai
 "Plug 'junegunn/fzf.vim'
 "Plug 'mileszs/ack.vim'
 "Plug 'LnL7/vim-nix'
+"Plug 'Shougo/vimproc.vim', {'do' : 'make'}
+"Plug 'idanarye/vim-vebugger'
+"Plug 'sakhnik/nvim-gdb', { 'do': ':!./install.sh \| UpdateRemotePlugins' }

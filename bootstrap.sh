@@ -188,7 +188,7 @@ InstallSoftware "ranger ntfs-3g bashmount"
 InstallSoftware "zathura zathura-djvu zathura-pdf-mupdf"
 InstallSoftware "zsh mpv cmus rofi kitty weechat youtube-dl"
 InstallSoftware "xz tar unzip p7zip"
-InstallSoftware "feh fzf jcal htop ImageMagick the_silver_searcher"
+InstallSoftware "feh fzf jcal htop bat ImageMagick the_silver_searcher"
 InstallSoftware "gnome-screenshot simple-mtpfs"
 InstallSoftware "tor torsocks obfs4proxy polipo privoxy wifish net-tools "
 InstallSoftware "liberation-fonts-ttf nerd-fonts font-awesome5 font-iosevka ttf-ubuntu-font-family font-vazir"
@@ -215,7 +215,7 @@ configRanger
 configi3
 configGnomeScreenShot
 
-# InstallSoftware pkg-config gdb gcc elogind clang man-pages-devel man-pages-posix
+# InstallSoftware pkg-config gdb gede edb-debugger valgrind gcc cmake clang man-pages-devel man-pages-posix elogind glew-devel glfw-devel sqlitebrowser
 # InstallSoftware capitaine-cursors mcos-mjv-xfce-edition la-capitaine-icon-theme fsearch-git
 # InstallSoftware v2ray netctl rar
 

@@ -11,6 +11,7 @@
 /home/.config/vimb/
 /home/.config/vifm/
 /home/.config/uGet/
+/home/.config/gede2/
 /home/.config/godot/
 /home/.config/pulse/
 /home/.config/kindd/
@@ -24,6 +25,7 @@
 /home/.config/Dharkael/
 /home/.config/texstudio/
 /home/.config/cmus/cache
+/home/.config/ristretto/
 /home/.config/QtProject/
 /home/.config/cmus/lib.pl
 /home/.config/libreoffice/
@@ -33,9 +35,13 @@
 /home/.config/transmission/
 /home/.config/QtProject.conf
 /home/.config/Trolltech.conf
-/home/.config/nvim/.netrwhist
+/home/.config/sqlitebrowser/
+/home/.config/user-dirs.dirs
 /home/.config/cmus/playlists/
+/home/.config/nvim/.netrwhist
+/home/.config/CaptainBallard/
 /home/.config/mpv/watch_later/
+/home/.config/user-dirs.locale
 /home/.config/whoozle.github.io/
 /home/.config/cmus/search-history
 /home/.config/cmus/command-history

@@ -19,6 +19,8 @@ alias yd='f(){ torify youtube-dl -f "best[height=720]"+bestaudio --write-auto-su
 alias mld="simple-mtpfs -l"
 alias mad="simple-mtpfs --device 1 ~/Device"
 alias mud="fusermount -u ~/Device"
+alias mkcd='f() { mkdir "$1"; cd "$1" }; f'
+alias mkar='f() { tar -czvf "$1".tar.gz "$2" }; f'
 
 # Git
 alias gii="git init"
@@ -72,6 +74,7 @@ alias xrvd="xbps-query -RX"                             # Show the reverse depen
 alias xrd="xbps-query -Rx"                              # Showing the required dependencies for a package
 alias xqH="xbps-query -H"                               # List registered packages in the package database (pkgdb) that are on hold
 alias xqn="xbps-query -Rs '' | wc -l"                   # Show the number of whole packages in your repos
+alias xqn2="xbps-query -Rs \* | wc -l"
 
 alias xh="xbps-pkgdb -m hold"                           # List of all packages that hold to be update!
 alias xuh="xbps-pkgdb -m unhold"                        # List of all packages that unhold and can ba update.
