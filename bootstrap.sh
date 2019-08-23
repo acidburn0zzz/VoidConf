@@ -187,7 +187,7 @@ InstallSoftware "git"
 InstallSoftware "ranger ntfs-3g bashmount"
 InstallSoftware "zathura zathura-djvu zathura-pdf-mupdf"
 InstallSoftware "zsh mpv cmus rofi kitty weechat youtube-dl"
-InstallSoftware "xz tar unzip p7zip"
+InstallSoftware "xz tar unzip unar p7zip"
 InstallSoftware "feh fzf jcal htop bat ImageMagick the_silver_searcher"
 InstallSoftware "gnome-screenshot simple-mtpfs"
 InstallSoftware "tor torsocks obfs4proxy polipo privoxy wifish net-tools "
@@ -215,7 +215,8 @@ configRanger
 configi3
 configGnomeScreenShot
 
-# InstallSoftware pkg-config gdb gede edb-debugger valgrind gcc cmake clang man-pages-devel man-pages-posix elogind glew-devel glfw-devel sqlitebrowser
+
+# InstallSoftware pkg-config gdb gede edb-debugger valgrind gcc cmake clang Bear man-pages-devel man-pages-posix elogind glew-devel glfw-devel sqlitebrowser ccls gtk+-devel SDL2-devel SDL-devel
 # InstallSoftware capitaine-cursors mcos-mjv-xfce-edition la-capitaine-icon-theme fsearch-git
 # InstallSoftware v2ray netctl rar
 
